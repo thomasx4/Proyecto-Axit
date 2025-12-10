@@ -1,0 +1,534 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Open+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+html, body {
+    font-family: "Montserrat", sans-serif;
+}
+
+/* Hero Section (antes .principal) */
+.hero-section {
+    display: flex;
+    flex-direction: column;
+    background-image: url(../assets/images/banner-bk.jpg);
+    background-position: center;
+    height: 600px;
+}
+
+.hero-section .hero-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.hero-section .hero-nav img {
+    width: 5%;
+    height: auto;
+    margin-left: 60px;
+}
+
+.hero-section .hero-nav .early-access {
+    margin-right: 60px;
+    font-weight: lighter;
+}
+
+.hero-section .hero-content {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    width: 50%;
+    margin-left: 70px;
+    margin-top: 40px;
+}
+
+.hero-section .hero-content .hero-title {
+    width: 50%;
+    font-size: 50px;
+    color: white;
+}
+
+.hero-section .hero-content .hero-description {
+    line-height: 1.6;
+    color: rgb(209, 201, 201);
+}
+
+.hero-section .hero-content .cta-button {
+    height: 40px;
+    width: 15%;
+    background-color: aquamarine;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bolder;
+    color: rgb(21, 21, 75);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.hero-section .hero-content .cta-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 15px black;
+}
+
+/* Features Section (antes .gradient) */
+.features-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.features-section .section-title {
+    color: rgb(21, 21, 75);
+}
+
+.features-grid {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.feature-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.feature-card .feature-text {
+    width: 70%;
+}
+
+/* Showcase Section (antes .triangular) */
+.showcase-section {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    margin-top: 160px;
+    padding: 20px 340px;
+    position: relative;
+}
+
+/* PARTE INFERIOR */
+.showcase-section::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    background: aquamarine;
+    z-index: -1;
+    clip-path: polygon(0 60%, 100% 0, 100% 100%, 0% 100%);
+}
+
+.showcase-row-1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.showcase-row-2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 60px;
+}
+
+.showcase-content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    flex: 1;
+    max-width: 500px;
+}
+
+.showcase-content .showcase-title {
+    color: rgb(21, 21, 75);
+    font-size: 2.5rem;
+}
+
+.showcase-content .showcase-description {
+    font-weight: lighter;
+    width: 100%;
+    line-height: 1.6;
+}
+
+.showcase-content .secondary-button {
+    height: 50px;
+    width: 160px;
+    background-color: rgb(21, 21, 75);
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bolder;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    align-self: flex-start;
+}
+
+.showcase-content .secondary-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(21, 21, 75, 0.4);
+}
+
+.showcase-image img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Pricing Section (antes .prices) */
+.pricing-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    padding: 80px 0;
+}
+
+.pricing-section .section-title {
+    color: rgb(21, 21, 75);
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.pricing-grid {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 0;
+}
+
+.pricing-card-basic,
+.pricing-card-pro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    width: 30%;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    min-width: 350px;
+    height: 380px;
+}
+
+.price-display {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+.price-display .price-period {
+    margin-left: 20px;
+    margin-top: 1px;
+    font-weight: bolder;
+    font-size: 1.0rem;
+}
+
+.price-display .price-amount {
+    margin-left: 20px;
+    margin-top: 1px;
+    font-weight: bolder;
+    font-size: 3.0rem;
+}
+
+.price-display .currency {
+    margin-right: 20px;
+    font-weight: bolder;
+    font-size: 1.0rem;
+}
+
+.pricing-card-basic .plan-name,
+.pricing-card-pro .plan-name {
+    color: #000;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.price-display .price-period {
+    color: #000;
+    font-size: 0.5rem;
+    font-weight: lighter;
+}
+
+.price-display .price-amount {
+    color: #000;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.plan-features {
+    list-style: none;
+    line-height: 1.6;
+}
+
+.pricing-card-basic .plan-features li,
+.pricing-card-pro .plan-features li {
+    font-size: 0.8rem;
+    color: #000;
+    font-weight: bolder;
+}
+
+.pricing-card-basic .pricing-button,
+.pricing-card-pro .pricing-button {
+    height: 50px;
+    width: 160px;
+    background-color: #fff;
+    border: 2px solid rgb(21, 21, 75);
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bolder;
+    color: rgb(21, 21, 75);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.pricing-card-basic .pricing-button:hover,
+.pricing-card-pro .pricing-button:hover {
+    transform: translateY(-3px);
+    background-color: aquamarine;
+    box-shadow: 0 5px 15px rgba(21, 21, 75, 0.4);
+}
+
+.pricing-card-premium {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    width: 30%;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgb(21, 21, 75);
+    min-width: 350px;
+    height: 380px;
+}
+
+.pricing-card-premium .plan-name {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.pricing-card-premium .price-period {
+    color: #fff;
+    font-size: 0.5rem;
+    font-weight: lighter;
+}
+
+.pricing-card-premium .price-amount {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.pricing-card-premium .plan-features {
+    list-style: none;
+    line-height: 1.6;
+    color: #fff;
+}
+
+.pricing-card-premium .plan-features li {
+    font-size: 0.8rem;
+    font-weight: bolder;
+}
+
+.pricing-card-premium .pricing-button {
+    height: 50px;
+    width: 160px;
+    background-color: aquamarine;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bolder;
+    color: rgb(21, 21, 75);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.pricing-card-premium .pricing-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(21, 21, 75, 0.4);
+}
+
+/* Clients Section (antes .clients) */
+.clients-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #dbdbdb;
+    gap: 20px;
+    padding: 30px 0;
+}
+
+.clients-section .client-logo {
+    transition: all 0.3s ease;
+}
+
+.clients-section .client-logo:hover {
+    transform: scale(1.1);
+}
+
+/* Contact Section (antes .forms) */
+.contact-section {
+    display: flex;
+    flex-direction: row;
+    background-image: url(../assets/images/contact-bk.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 600px;
+    padding: 60px 40px;
+}
+
+.contact-section .contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 50%;
+    padding-right: 40px;
+}
+
+.contact-section .contact-info .contact-title {
+    width: 100%;
+    font-size: 50px;
+    color: white;
+}
+
+.contact-section .contact-info .contact-quote,
+.contact-section .contact-info .contact-details {
+    line-height: 1.6;
+    color: rgb(209, 201, 201);
+    font-size: 18px;
+    width: 100%;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    width: 50%;
+    margin-left: 70px;
+    margin-top: 40px;
+}
+
+.contact-form .form-row {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: 100%;
+}
+
+.contact-form .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    margin: 0;
+}
+
+.contact-form .form-group .form-label {
+    color: aquamarine;
+    font-size: 1.5rem;
+}
+
+.contact-form .form-group .form-input {
+    height: 50px;
+    width: 80%;
+    background-color: rgba(127, 255, 212, 0.1);
+    border-radius: 5px;
+    border: 2px solid aquamarine;
+    padding: 0 20px;
+    text-decoration: none;
+    font-weight: bolder;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    font-size: 1.2rem;
+}
+
+.contact-form .form-group .form-input:hover {
+    background-color: rgba(127, 255, 212, 0.2);
+    border-color: #7FFFD4;
+    box-shadow: 0 0 10px rgba(127, 255, 212, 0.5);
+}
+
+.contact-form .form-textarea {
+    height: 200px;
+    width: 300px;
+    background-color: rgba(127, 255, 212, 0.1);
+    border: 2px solid aquamarine;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bolder;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    font-size: 1.2rem;
+    resize: vertical;
+}
+
+.contact-form .form-submit .submit-button {
+    height: 50px;
+    min-width: 360px;
+    background-color: aquamarine;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bolder;
+    color: rgb(21, 21, 75);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+/* Footer (antes .footer) */
+.main-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(21, 21, 75);
+    padding: 40px 0;
+}
+
+.main-footer .footer-early-access {
+    color: #fff;
+}
+
+.social-media {
+    display: flex;
+    flex-direction: row;
+    width: 10%;
+    justify-content: space-between;
+    transition: all 0.3s ease;
+}
+
+.social-media .social-icon:hover {
+    transform: translateY(-3px);
+}
