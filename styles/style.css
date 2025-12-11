@@ -531,5 +531,596 @@ html, body {
 
 .social-media .social-icon:hover {
     transform: translateY(-3px);
+
+}
+
+@media (min-width: 352px) and (max-width: 480px) {
+    /* Hero Section - Muy compacto para pantallas pequeñas */
+    .hero-section {
+        height: 350px;
+        background-position: center center;
+        background-size: cover;
+    }
     
+    .hero-section .hero-nav {
+        padding: 15px 0;
+    }
+    
+    .hero-section .hero-nav img {
+        width: 20%;
+        margin-left: 15px;
+    }
+    
+    .hero-section .hero-nav .early-access {
+        margin-right: 15px;
+        font-size: 0.75rem;
+        font-weight: normal;
+    }
+    
+    .hero-section .hero-content {
+        width: 90%;
+        margin-left: 15px;
+        margin-top: 20px;
+        gap: 15px;
+        text-align: center;
+    }
+    
+    .hero-section .hero-content .hero-title {
+        width: 100%;
+        font-size: 24px;
+        line-height: 1.2;
+    }
+    
+    .hero-section .hero-content .hero-description {
+        font-size: 0.85rem;
+        line-height: 1.5;
+    }
+    
+    .hero-section .hero-content .cta-button {
+        width: 180px;
+        height: 40px;
+        margin: 0 auto;
+        font-size: 0.9rem;
+    }
+    
+    /* Features Section - Diseño completamente vertical */
+    .features-section {
+        margin-top: 30px;
+        padding: 0 15px;
+    }
+    
+    .features-section .section-title {
+        font-size: 1.5rem;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    
+    .features-grid {
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    .feature-card {
+        width: 100%;
+        padding: 0 10px;
+    }
+    
+    .feature-card img {
+        max-width: 100px;
+        height: auto;
+        margin-bottom: 15px;
+    }
+    
+    .feature-card .feature-text {
+        width: 90%;
+        font-size: 0.9rem;
+        line-height: 1.5;
+    }
+    
+    /* Showcase Section - Ajustes para móviles pequeños */
+    .showcase-section {
+        margin-top: 50px;
+        padding: 20px 15px;
+        gap: 50px;
+    }
+    
+    .showcase-section::after {
+        clip-path: polygon(0 80%, 100% 0, 100% 100%, 0% 100%);
+        height: 80%;
+    }
+    
+    .showcase-row-1,
+    .showcase-row-2 {
+        flex-direction: column;
+        gap: 30px;
+        text-align: center;
+    }
+    
+    .showcase-row-2 {
+        flex-direction: column-reverse;
+    }
+    
+    .showcase-content {
+        align-items: center;
+        max-width: 100%;
+        gap: 20px;
+    }
+    
+    .showcase-content .showcase-title {
+        font-size: 1.5rem;
+        width: 100%;
+    }
+    
+    .showcase-content .showcase-description {
+        font-size: 0.85rem;
+        width: 100%;
+    }
+    
+    .showcase-content .secondary-button {
+        width: 140px;
+        height: 40px;
+        font-size: 0.85rem;
+        align-self: center;
+    }
+    
+    .showcase-image img {
+        max-width: 280px;
+        width: 100%;
+        height: auto;
+    }
+    
+    /* Pricing Section - Una tarjeta por vez */
+    .pricing-section {
+        padding: 40px 15px;
+        gap: 30px;
+    }
+    
+    .pricing-section .section-title {
+        font-size: 1.5rem;
+        padding: 0 10px;
+    }
+    
+    .pricing-grid {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+    
+    .pricing-card-basic,
+    .pricing-card-premium,
+    .pricing-card-pro {
+        width: 100%;
+        max-width: 300px;
+        min-width: unset;
+        height: 320px;
+        padding: 20px 15px;
+        gap: 25px;
+    }
+    
+    .price-display .price-amount {
+        font-size: 2.2rem;
+    }
+    
+    .price-display .currency,
+    .price-display .price-period {
+        font-size: 0.9rem;
+    }
+    
+    .plan-features li {
+        font-size: 0.8rem;
+        text-align: center;
+    }
+    
+    .pricing-card-basic .pricing-button,
+    .pricing-card-premium .pricing-button,
+    .pricing-card-pro .pricing-button {
+        width: 140px;
+        height: 40px;
+        font-size: 0.85rem;
+    }
+    
+    /* Clients Section - Logos en 2 filas */
+    .clients-section {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        padding: 25px 15px;
+    }
+    
+    .clients-section .client-logo {
+        width: 40%;
+        max-width: 120px;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .clients-section .client-logo img {
+        max-width: 80px;
+        width: 100%;
+        height: auto;
+    }
+    
+    /* Contact Section - Diseño vertical completo */
+    .contact-section {
+        flex-direction: column;
+        height: auto;
+        padding: 40px 15px;
+        gap: 40px;
+        text-align: center;
+    }
+    
+    .contact-section .contact-info {
+        width: 100%;
+        padding-right: 0;
+        gap: 25px;
+    }
+    
+    .contact-section .contact-info .contact-title {
+        font-size: 28px;
+        width: 100%;
+    }
+    
+    .contact-section .contact-info .contact-quote,
+    .contact-section .contact-info .contact-details {
+        font-size: 0.9rem;
+        width: 100%;
+        line-height: 1.5;
+    }
+    
+    .contact-form {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 0;
+        gap: 40px;
+        align-items: center;
+    }
+    
+    .contact-form .form-row {
+        flex-direction: column;
+        width: 100%;
+        max-width: 300px;
+        gap: 25px;
+    }
+    
+    .contact-form .form-group {
+        width: 100%;
+        gap: 15px;
+    }
+    
+    .contact-form .form-group .form-label {
+        font-size: 1.2rem;
+        text-align: left;
+    }
+    
+    .contact-form .form-group .form-input {
+        width: 100%;
+        height: 45px;
+        font-size: 1rem;
+        padding: 0 15px;
+    }
+    
+    .contact-form .form-textarea {
+        width: 100%;
+        max-width: 300px;
+        height: 150px;
+        font-size: 1rem;
+    }
+    
+    .contact-form .form-submit .submit-button {
+        min-width: 100%;
+        max-width: 300px;
+        height: 45px;
+        font-size: 1rem;
+    }
+    
+    /* Footer - Diseño vertical */
+    .main-footer {
+        flex-direction: column;
+        gap: 25px;
+        text-align: center;
+        padding: 30px 15px;
+    }
+    
+    .main-footer .footer-early-access {
+        font-size: 0.9rem;
+        width: 100%;
+    }
+    
+    .social-media {
+        width: 100%;
+        max-width: 250px;
+        min-width: unset;
+        justify-content: center;
+        gap: 20px;
+    }
+    
+    .social-media .social-icon img {
+        height: 22px;
+        width: auto;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    /* Hero Section - Mejor aprovechamiento del espacio */
+    .hero-section {
+        height: 400px;
+    }
+    
+    .hero-section .hero-nav img {
+        width: 15%;
+        margin-left: 30px;
+    }
+    
+    .hero-section .hero-nav .early-access {
+        margin-right: 30px;
+        font-size: 0.85rem;
+    }
+    
+    .hero-section .hero-content {
+        width: 80%;
+        margin-left: 30px;
+        margin-top: 30px;
+        gap: 25px;
+    }
+    
+    .hero-section .hero-content .hero-title {
+        font-size: 32px;
+        width: 80%;
+    }
+    
+    .hero-section .hero-content .hero-description {
+        font-size: 0.95rem;
+    }
+    
+    .hero-section .hero-content .cta-button {
+        width: 200px;
+        height: 45px;
+        font-size: 0.95rem;
+    }
+    
+    /* Features Section - 2 columnas en tablets */
+    .features-section {
+        margin-top: 40px;
+        padding: 0 20px;
+    }
+    
+    .features-section .section-title {
+        font-size: 1.8rem;
+        margin-bottom: 40px;
+    }
+    
+    .features-grid {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+    }
+    
+    .feature-card {
+        width: calc(50% - 15px);
+        min-width: 200px;
+    }
+    
+    .feature-card img {
+        max-width: 120px;
+    }
+    
+    .feature-card .feature-text {
+        width: 85%;
+        font-size: 0.95rem;
+    }
+    
+    /* Showcase Section - Más espacio para tablets */
+    .showcase-section {
+        margin-top: 80px;
+        padding: 20px 30px;
+        gap: 60px;
+    }
+    
+    .showcase-section::after {
+        clip-path: polygon(0 70%, 100% 0, 100% 100%, 0% 100%);
+    }
+    
+    .showcase-row-1,
+    .showcase-row-2 {
+        gap: 40px;
+    }
+    
+    .showcase-content .showcase-title {
+        font-size: 1.8rem;
+    }
+    
+    .showcase-content .showcase-description {
+        font-size: 0.95rem;
+    }
+    
+    .showcase-image img {
+        max-width: 350px;
+    }
+    
+    /* Pricing Section - 2 tarjetas por fila cuando cabe */
+    .pricing-section {
+        padding: 50px 20px;
+    }
+    
+    .pricing-section .section-title {
+        font-size: 1.8rem;
+    }
+    
+    .pricing-grid {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 25px;
+    }
+    
+    .pricing-card-basic,
+    .pricing-card-premium,
+    .pricing-card-pro {
+        width: calc(50% - 12.5px);
+        max-width: 280px;
+        height: 350px;
+    }
+    
+    /* Clients Section - Más logos por fila */
+    .clients-section {
+        padding: 30px 20px;
+        gap: 25px;
+    }
+    
+    .clients-section .client-logo {
+        width: 30%;
+        max-width: 140px;
+    }
+    
+    /* Contact Section - Mejor distribución del espacio */
+    .contact-section {
+        padding: 50px 30px;
+        gap: 50px;
+    }
+    
+    .contact-section .contact-info .contact-title {
+        font-size: 34px;
+    }
+    
+    .contact-form .form-row {
+        flex-direction: row;
+        max-width: 500px;
+    }
+    
+    .contact-form .form-group {
+        width: 48%;
+    }
+    
+    .contact-form .form-textarea {
+        max-width: 500px;
+        height: 180px;
+    }
+    
+    /* Footer - Mejor distribución */
+    .main-footer {
+        padding: 35px 20px;
+    }
+    
+    .social-media {
+        max-width: 300px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 920px) {
+    /* Hero Section - Altura óptima para laptops */
+    .hero-section {
+        height: 500px;
+    }
+    
+    .hero-section .hero-content {
+        width: 60%;
+        margin-left: 50px;
+    }
+    
+    .hero-section .hero-content .hero-title {
+        font-size: 42px;
+        width: 70%;
+    }
+    
+    /* Features Section - 3 columnas */
+    .features-grid {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        gap: 25px;
+        padding: 0 40px;
+    }
+    
+    .feature-card {
+        width: 33.33%;
+    }
+    
+    /* Showcase Section - Menos padding lateral */
+    .showcase-section {
+        padding: 20px 80px;
+    }
+    
+    /* Pricing Section - 3 tarjetas en una fila */
+    .pricing-grid {
+        flex-wrap: nowrap;
+        gap: 20px;
+        padding: 0 40px;
+    }
+    
+    .pricing-card-basic,
+    .pricing-card-premium,
+    .pricing-card-pro {
+        width: 33.33%;
+        min-width: 220px;
+    }
+    
+    /* Contact Section - Más espacio para formulario */
+    .contact-section {
+        padding: 60px 50px;
+    }
+    
+    .contact-form .form-textarea {
+        width: 400px;
+    }
+}
+
+@media (min-width: 921px) and (max-width: 1279px) {
+    /* Este es básicamente nuestro diseño desktop estándar */
+    /* Mostramos el diseño actual que ya tienes en el CSS */
+    .showcase-section {
+        padding: 20px 200px;
+    }
+    
+    .contact-section {
+        padding: 60px 80px;
+    }
+    
+    .contact-form .form-textarea {
+        width: 350px;
+    }
+}
+
+
+@media (min-width: 1280px) {
+    /* Hero Section - Más margen para pantallas grandes */
+    .hero-section .hero-content {
+        width: 45%;
+        margin-left: 100px;
+    }
+    
+    .hero-section .hero-content .hero-title {
+        width: 60%;
+    }
+    
+    /* Showcase Section - Mucho más espacio lateral */
+    .showcase-section {
+        padding: 20px 300px;
+    }
+    
+    /* Pricing Section - Tarjetas más grandes */
+    .pricing-card-basic,
+    .pricing-card-premium,
+    .pricing-card-pro {
+        min-width: 380px;
+        height: 400px;
+    }
+    
+    .price-display .price-amount {
+        font-size: 3.5rem;
+    }
+    
+    /* Contact Section - Más espacio general */
+    .contact-section {
+        padding: 80px 120px;
+    }
+    
+    .contact-form .form-textarea {
+        width: 450px;
+        height: 220px;
+    }
+    
+    /* Footer - Más padding para equilibrio visual */
+    .main-footer {
+        padding: 50px 0;
+    }
 }
